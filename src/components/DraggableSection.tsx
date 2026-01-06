@@ -19,6 +19,7 @@ const DraggableSection = ({ component, disabled = false }: DraggableSectionProps
 
   const style = transform ? {
     transform: `translate3d(${transform.x}px, ${transform.y}px, 0)`,
+    transition: 'none',
   } : undefined
 
   return (
@@ -26,29 +27,39 @@ const DraggableSection = ({ component, disabled = false }: DraggableSectionProps
       ref={setNodeRef}
       style={style}
       className={cn(
-        "cursor-grab active:cursor-grabbing transition-all hover:shadow-md",
-        isDragging && "opacity-50 scale-105 shadow-lg",
-        disabled && "opacity-50 cursor-not-allowed"
+        "cursor-grab active:cursor-grabbing transition-all duration-200 border-2",
+        "hover:shadow-lg hover:border-primary hover:bg-primary/5",
+        isDragging && "opacity-30 scale-105",
+        disabled && "opacity-50 cursor-not-allowed hover:shadow-none hover:bg-transparent hover:border-border"
       )}
       {...attributes}
       {...listeners}
     >
-      <CardHeader className="pb-2">
-        <div className="flex items-center justify-between">
-          <CardTitle className="text-sm font-medium">{component.title}</CardTitle>
+      <CardHeader className="pb-3 space-y-2">
+        <div className="flex items-start justify-between gap-2">
+          <CardTitle className="text-sm font-semibold leading-tight flex-1">
+            {component.title}
+          </CardTitle>
           {component.required && (
-            <Badge variant="destructive" className="text-xs">Obbligatorio</Badge>
+            <Badge variant="destructive" className="text-xs shrink-0">
+              Obbligatorio
+            </Badge>
           )}
         </div>
-        <CardDescription className="text-xs">
+        <div className="flex flex-wrap items-center gap-2">
+          <Badge variant="outline" className="text-xs font-mono">
+            {component.id}
+          </Badge>
+          {component.gdprArticles.map(article => (
+            <Badge key={article} variant="secondary" className="text-xs">
+              {article}
+            </Badge>
+          ))}
+        </div>
+        <CardDescription className="text-xs leading-relaxed">
           {component.description}
         </CardDescription>
       </CardHeader>
-      <CardContent className="pt-0">
-        <div className="text-xs text-muted-foreground">
-          {component.gdprArticles.join(', ')}
-        </div>
-      </CardContent>
     </Card>
   )
 }

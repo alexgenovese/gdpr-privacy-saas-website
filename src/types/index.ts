@@ -20,6 +20,8 @@ export interface PolicySection {
 export interface BuilderState {
   sections: PolicySection[]
   companyInfo: CompanyInfo
+  customVariables: Record<string, string>
+  isModified: boolean
 }
 
 export interface CompanyInfo {

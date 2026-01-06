@@ -10,6 +10,10 @@ interface BuilderStore extends BuilderState {
   updateSectionContent: (sectionId: string, content: string) => void
   reorderSections: (fromIndex: number, toIndex: number) => void
   updateCompanyInfo: (info: Partial<CompanyInfo>) => void
+  updateCustomVariable: (key: string, value: string) => void
+  getAllVariables: () => string[]
+  markAsModified: () => void
+  markAsPublished: () => void
   reset: () => void
   getSectionsByOrder: () => PolicySection[]
   getFullPolicy: () => string
@@ -25,7 +29,9 @@ const initialState: BuilderState = {
     website: '',
     dpo: '',
     dpoEmail: ''
-  }
+  },
+  customVariables: {},
+  isModified: false
 }
 
 export const useBuilderStore = create<BuilderStore>()(
@@ -46,7 +52,8 @@ export const useBuilderStore = create<BuilderStore>()(
         }
 
         set((state) => ({
-          sections: [...state.sections, newSection]
+          sections: [...state.sections, newSection],
+          isModified: true
         }))
       },
 
@@ -54,7 +61,8 @@ export const useBuilderStore = create<BuilderStore>()(
         set((state) => ({
           sections: state.sections
             .filter(s => s.id !== sectionId)
-            .map((s, index) => ({ ...s, order: index }))
+            .map((s, index) => ({ ...s, order: index })),
+          isModified: true
         }))
       },
 
@@ -62,7 +70,8 @@ export const useBuilderStore = create<BuilderStore>()(
         set((state) => ({
           sections: state.sections.map(s =>
             s.id === sectionId ? { ...s, title } : s
-          )
+          ),
+          isModified: true
         }))
       },
 
@@ -70,7 +79,8 @@ export const useBuilderStore = create<BuilderStore>()(
         set((state) => ({
           sections: state.sections.map(s =>
             s.id === sectionId ? { ...s, content } : s
-          )
+          ),
+          isModified: true
         }))
       },
 
@@ -81,15 +91,49 @@ export const useBuilderStore = create<BuilderStore>()(
           sections.splice(toIndex, 0, movedSection)
 
           return {
-            sections: sections.map((s, index) => ({ ...s, order: index }))
+            sections: sections.map((s, index) => ({ ...s, order: index })),
+            isModified: true
           }
         })
       },
 
       updateCompanyInfo: (info: Partial<CompanyInfo>) => {
         set((state) => ({
-          companyInfo: { ...state.companyInfo, ...info }
+          companyInfo: { ...state.companyInfo, ...info },
+          isModified: true
         }))
+      },
+
+      updateCustomVariable: (key: string, value: string) => {
+        set((state) => ({
+          customVariables: { ...state.customVariables, [key]: value },
+          isModified: true
+        }))
+      },
+
+      getAllVariables: () => {
+        const sections = get().sections
+        const variablesSet = new Set<string>()
+        
+        sections.forEach(section => {
+          const matches = section.content.match(/\[([A-Z_]+)\]/g)
+          if (matches) {
+            matches.forEach(match => {
+              const key = match.slice(1, -1) // Rimuove [ e ]
+              variablesSet.add(key)
+            })
+          }
+        })
+        
+        return Array.from(variablesSet).sort()
+      },
+
+      markAsModified: () => {
+        set({ isModified: true })
+      },
+
+      markAsPublished: () => {
+        set({ isModified: false })
       },
 
       reset: () => {
@@ -103,6 +147,7 @@ export const useBuilderStore = create<BuilderStore>()(
       getFullPolicy: () => {
         const sections = get().getSectionsByOrder()
         const companyInfo = get().companyInfo
+        const customVariables = get().customVariables
 
         let fullPolicy = `# Privacy Policy\n\n`
 
@@ -111,7 +156,8 @@ export const useBuilderStore = create<BuilderStore>()(
         }
 
         sections.forEach(section => {
-          const content = section.content
+          let content = section.content
+            // Sostituisce variabili companyInfo
             .replace(/\[RAGIONE_SOCIALE\]/g, companyInfo.name || '[RAGIONE_SOCIALE]')
             .replace(/\[INDIRIZZO_COMPLETO\]/g, companyInfo.address || '[INDIRIZZO_COMPLETO]')
             .replace(/\[EMAIL_TITOLARE\]/g, companyInfo.email || '[EMAIL_TITOLARE]')
@@ -121,6 +167,12 @@ export const useBuilderStore = create<BuilderStore>()(
             .replace(/\[EMAIL_DPO\]/g, companyInfo.dpoEmail || '[EMAIL_DPO]')
             .replace(/\[EMAIL_DIRITTI\]/g, companyInfo.email || '[EMAIL_DIRITTI]')
             .replace(/\[EMAIL_CONTATTO\]/g, companyInfo.email || '[EMAIL_CONTATTO]')
+          
+          // Sostituisce tutte le altre variabili custom
+          Object.entries(customVariables).forEach(([key, value]) => {
+            const regex = new RegExp(`\\[${key}\\]`, 'g')
+            content = content.replace(regex, value || `[${key}]`)
+          })
 
           fullPolicy += `${content}\n\n`
         })
@@ -132,7 +184,9 @@ export const useBuilderStore = create<BuilderStore>()(
       name: 'gdpr-policy-builder-storage',
       partialize: (state) => ({
         sections: state.sections,
-        companyInfo: state.companyInfo
+        companyInfo: state.companyInfo,
+        customVariables: state.customVariables,
+        isModified: state.isModified
       })
     }
   )
