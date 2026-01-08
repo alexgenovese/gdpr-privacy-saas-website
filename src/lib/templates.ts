@@ -1279,6 +1279,1018 @@ Questa informativa è disponibile nelle seguenti lingue:
 - \u2610 [ALTRE_LINGUE]
 
 Link versioni: [LINK_VERSIONI_LINGUE]`
+  },
+  {
+    id: 'summary',
+    title: 'Riepilogo della Privacy Policy',
+    category: 'identity',
+    required: false,
+    gdprArticles: ['Art. 12', 'Art. 13(1)'],
+    description: 'Panoramica user-friendly dei trattamenti dati',
+    template: `## Riepilogo
+
+Benvenuto nella privacy policy di **[RAGIONE_SOCIALE]**. Questa policy ti aiuterà a comprendere quali dati raccogliamo, perché li raccogliamo e quali sono i tuoi diritti in merito.
+
+### Dati che raccogliamo automaticamente
+
+Raccogliamo automaticamente i tuoi dati, ad esempio quando visiti il nostro sito web o utilizzi i nostri servizi.
+
+**Tipologie di dati raccolti automaticamente**:
+- Strumenti di Tracciamento (cookie, pixel)
+- Dati di utilizzo (pagine visitate, click, interazioni)
+- Cronologia di navigazione
+- Informazioni sul dispositivo (browser, sistema operativo)
+- Indirizzo IP e geolocalizzazione
+- [ALTRI_DATI_AUTOMATICI]
+
+**Terze parti che ci aiutano a trattarli**:
+- [LISTA_TERZE_PARTI_AUTO]
+
+**Come li usiamo**:
+- Statistica e analisi
+- Miglioramento del servizio
+- Gestione dei tag
+- [ALTRE_FINALITA_AUTO]
+
+### Dati che ci fornisci
+
+Raccogliamo i dati che ci fornisci, ad esempio quando:
+- Compili un modulo di registrazione
+- Crei un account
+- Ci contatti per assistenza
+- Effettui un acquisto
+- Ti iscrivi alla newsletter
+
+**Tipologie di dati forniti**:
+- Dati identificativi (nome, cognome, email)
+- Dati di contatto (telefono, indirizzo)
+- Dati di pagamento (gestiti da provider sicuri)
+- Dati comunicati durante l'utilizzo del servizio
+- [ALTRI_DATI_FORNITI]
+
+**Terze parti che ci aiutano a trattarli**:
+- [LISTA_TERZE_PARTI_FORNITI]
+
+**Come li usiamo**:
+- Erogazione del servizio richiesto
+- Gestione account e autenticazione
+- Adempimenti contrattuali
+- Assistenza e supporto
+- [ALTRE_FINALITA_FORNITI]
+
+### I tuoi diritti
+
+Hai il diritto di:
+✓ Accedere ai tuoi dati personali
+✓ Rettificare dati inesatti
+✓ Richiedere la cancellazione (diritto all'oblio)
+✓ Limitare il trattamento
+✓ Opporti al trattamento
+✓ Richiedere la portabilità dei dati
+✓ Revocare il consenso in qualsiasi momento
+
+**Per esercitare i tuoi diritti**: Contattaci a [EMAIL_DIRITTI]`
+  },
+  {
+    id: 'third_party_services',
+    title: 'Dettagli sui Servizi di Terze Parti',
+    category: 'third-parties',
+    required: false,
+    gdprArticles: ['Art. 13(1)(e)', 'Art. 28', 'Art. 44-49'],
+    description: 'Dettagli completi sui servizi di terze parti utilizzati',
+    template: `## Dettagli sul Trattamento dei Dati Personali
+
+I servizi contenuti in questa sezione permettono al Titolare di trattare i Dati con l'ausilio di terze parti.
+
+### Gestione dei tag
+
+Questo tipo di servizio consente al Titolare di gestire in modo centralizzato i tag o gli script necessari su questa Applicazione. Di conseguenza, i Dati dell'Utente possono essere trattati da questi servizi, con la possibilità che vengano conservati.
+
+#### Google Tag Manager
+**Fornitore**: Google LLC  
+**Sede**: Stati Uniti  
+
+Google Tag Manager è un servizio di gestione dei tag fornito da Google LLC o da Google Ireland Limited (a seconda del luogo in cui questa Applicazione viene consultata).
+
+**Dati Personali trattati**: 
+- Dati di utilizzo
+- Strumenti di Tracciamento
+
+**Privacy Policy**: https://policies.google.com/privacy  
+**Garanzie per trasferimenti extra-UE**: Standard Contractual Clauses (SCC)
+
+---
+
+### Statistica e Analytics
+
+I servizi contenuti in questa sezione permettono al Titolare di monitorare e analizzare i dati di traffico e servono a tener traccia del comportamento dell'Utente.
+
+#### Google Analytics 4
+**Fornitore**: Google LLC  
+**Sede**: Stati Uniti  
+
+Google Analytics è un servizio di analisi web fornito da Google LLC ("Google"). Google utilizza i Dati Personali raccolti allo scopo di tracciare ed esaminare l'utilizzo di questa Applicazione, compilare report e condividerli con gli altri servizi sviluppati da Google.
+
+**Dati Personali trattati**: 
+- Dati di utilizzo
+- Strumenti di Tracciamento
+- Eventi personalizzati
+- Metriche di conversione
+
+**Privacy Policy**: https://policies.google.com/privacy  
+**Opt-out**: https://tools.google.com/dlpage/gaoptout  
+**Garanzie per trasferimenti extra-UE**: Standard Contractual Clauses (SCC)
+
+#### Meta Events Manager (Facebook Pixel)
+**Fornitore**: Meta Platforms, Inc.  
+**Sede**: Stati Uniti  
+
+Meta Events Manager è un servizio di statistica fornito da Meta Platforms, Inc. Integrando il pixel di Meta, Meta Events Manager può dare al Titolare delle informazioni sul traffico e sulle interazioni su questa Applicazione.
+
+**Dati Personali trattati**: 
+- Click
+- Cronologia di navigazione
+- Dati di utilizzo
+- Pageview
+- Strumenti di Tracciamento
+
+**Privacy Policy**: https://www.facebook.com/privacy/policy/  
+**Opt-out**: https://www.facebook.com/help/247395082112892  
+**Garanzie per trasferimenti extra-UE**: Standard Contractual Clauses (SCC)
+
+---
+
+### Gestione della raccolta dati e dei sondaggi online
+
+Questo tipo di servizio permette a questa Applicazione di gestire la creazione, l'implementazione, l'amministrazione, la distribuzione e l'analisi di moduli e di sondaggi online.
+
+#### Typeform
+**Fornitore**: TYPEFORM S.L.  
+**Sede**: Spagna (UE)  
+
+Typeform è un generatore di moduli e una piattaforma di raccolta dati fornita da TYPEFORM S.L. I Dati Personali raccolti dipendono dalle informazioni richieste e fornite dagli Utenti nel modulo online corrispondente.
+
+**Dati Personali trattati**: 
+- Dati comunicati durante l'utilizzo del servizio
+- Dati di utilizzo
+- Strumenti di Tracciamento
+
+**Privacy Policy**: https://admin.typeform.com/to/dwk6gt
+
+#### Google Forms
+**Fornitore**: Google LLC  
+**Sede**: Stati Uniti  
+
+Google Forms è un servizio di gestione moduli fornito da Google LLC. Permette al Titolare di raccogliere Dati Personali degli Utenti attraverso moduli online.
+
+**Dati Personali trattati**: 
+- Dati comunicati durante l'utilizzo del servizio
+- Email
+- Nome
+- [ALTRI_DATI_FORM]
+
+**Privacy Policy**: https://policies.google.com/privacy  
+**Garanzie per trasferimenti extra-UE**: Standard Contractual Clauses (SCC)
+
+---
+
+### Elaborazione pagamenti
+
+I servizi di elaborazione pagamenti permettono a questa Applicazione di processare pagamenti tramite carta di credito, bonifico bancario o altri mezzi. Per garantire maggiore sicurezza, questa Applicazione condivide solo le informazioni necessarie all'esecuzione della transazione con gli intermediari finanziari che gestiscono le transazioni.
+
+**IMPORTANTE**: I dati completi delle carte di pagamento NON vengono mai memorizzati sui nostri server, ma sono gestiti esclusivamente dai processori di pagamento certificati PCI-DSS.
+
+#### Stripe
+**Fornitore**: Stripe, Inc.  
+**Sede**: Stati Uniti  
+
+Stripe è un servizio di gestione pagamenti fornito da Stripe Inc. che permette a questa Applicazione di effettuare transazioni tramite carta di credito/debito.
+
+**Dati Personali trattati**: 
+- Dati di fatturazione
+- Email
+- Nome
+- Informazioni carta (gestite esclusivamente da Stripe, non memorizzate sui nostri server)
+
+**Privacy Policy**: https://stripe.com/privacy  
+**Garanzie per trasferimenti extra-UE**: Standard Contractual Clauses (SCC)  
+**Certificazione**: PCI-DSS Level 1
+
+#### PayPal
+**Fornitore**: PayPal Inc.  
+**Sede**: Stati Uniti  
+
+PayPal è un servizio di pagamento fornito da PayPal Inc., che consente all'Utente di effettuare pagamenti online.
+
+**Dati Personali trattati**: 
+- Dati richiesti dal servizio PayPal
+- Email
+- Nome
+
+**Privacy Policy**: https://www.paypal.com/webapps/mpp/ua/privacy-full  
+**Garanzie per trasferimenti extra-UE**: Standard Contractual Clauses (SCC)
+
+---
+
+### Hosting e infrastruttura
+
+Questi servizi ospitano i dati e i file che permettono a questa Applicazione di funzionare e essere distribuita, oltre a fornire un'infrastruttura pronta all'uso per erogare specifiche funzionalità di questa Applicazione.
+
+#### Vercel
+**Fornitore**: Vercel Inc.  
+**Sede**: Stati Uniti  
+
+Vercel è una piattaforma di hosting e deployment fornita da Vercel Inc.
+
+**Dati Personali trattati**: 
+- Dati di utilizzo
+- Indirizzo IP
+- Log di sistema
+
+**Privacy Policy**: https://vercel.com/legal/privacy-policy  
+**Garanzie per trasferimenti extra-UE**: Standard Contractual Clauses (SCC)
+
+---
+
+### Comunicazioni email
+
+Questi servizi permettono di gestire un database di contatti email, telefono o altre informazioni di contatto per comunicare con l'Utente.
+
+#### Mailchimp
+**Fornitore**: The Rocket Science Group LLC  
+**Sede**: Stati Uniti  
+
+Mailchimp è un servizio di gestione indirizzi email e invio messaggi email fornito da The Rocket Science Group LLC.
+
+**Dati Personali trattati**: 
+- Email
+- Nome
+- Cognome
+- [ALTRI_DATI_MAILCHIMP]
+
+**Privacy Policy**: https://mailchimp.com/legal/privacy/  
+**Garanzie per trasferimenti extra-UE**: Standard Contractual Clauses (SCC)
+
+---
+
+### Note sui Trasferimenti Extra-UE
+
+Alcuni dei servizi terzi sopra menzionati sono localizzati al di fuori dell'Unione Europea. In conformità agli **Articoli 44-49 GDPR** (Trasferimenti di dati personali verso paesi terzi), il Titolare si assicura che:
+
+1. **Garanzie Adeguate**: Vengono implementate garanzie adeguate quali:
+   - Standard Contractual Clauses (SCC) approvate dalla Commissione UE
+   - Valutazioni di trasferimento (Transfer Impact Assessment)
+   - Misure supplementari ove necessario
+
+2. **Trasparenza**: L'Utente è informato sulla localizzazione del trattamento
+
+3. **Diritti**: I diritti dell'interessato restano esercitabili
+
+**Per maggiori informazioni** sui trasferimenti extra-UE e le garanzie implementate: [EMAIL_DIRITTI]`
+  },
+  {
+    id: 'cookie_policy',
+    title: 'Cookie Policy',
+    category: 'cookies',
+    required: false,
+    gdprArticles: ['Art. 122 Codice Privacy', 'ePrivacy Directive'],
+    description: 'Policy dettagliata sull\'utilizzo dei cookie',
+    template: `## Cookie Policy
+
+Questa Applicazione fa utilizzo di Strumenti di Tracciamento. Per saperne di più, gli Utenti possono consultare la presente Cookie Policy.
+
+### Cosa sono i Cookie?
+
+I Cookie sono **piccoli file di testo** che vengono memorizzati sul dispositivo dell'Utente (computer, tablet, smartphone) quando si visita un sito web. I Cookie permettono al sito di:
+- Ricordare le tue azioni e preferenze
+- Migliorare la navigazione
+- Personalizzare i contenuti
+- Analizzare il traffico
+
+I Cookie possono essere **temporanei** (cancellati alla chiusura del browser) o **persistenti** (rimangono sul dispositivo fino alla scadenza o cancellazione manuale).
+
+### Cookie e Strumenti di Tracciamento utilizzati
+
+#### Cookie Tecnici (sempre attivi)
+
+Questi Cookie sono **necessari** per il funzionamento del sito e non richiedono il consenso dell'utente.
+
+**Durata**: Sessione / [DURATA_COOKIE_TECNICI]
+
+**Finalità**:
+- Autenticazione e sicurezza
+- Mantenimento sessione utente
+- Preferenze tecniche (lingua, layout)
+- Bilanciamento del carico server
+
+**Cookie utilizzati**:
+| Nome Cookie | Fornitore | Finalità | Durata |
+|-------------|-----------|----------|---------|
+| session_id | [RAGIONE_SOCIALE] | Gestione sessione utente | Sessione |
+| auth_token | [RAGIONE_SOCIALE] | Autenticazione | 7 giorni |
+| [ALTRI_COOKIE_TECNICI] | | | |
+
+#### Cookie Analitici
+
+Questi Cookie ci aiutano a capire come gli utenti interagiscono con il sito web attraverso la raccolta e l'analisi di informazioni in forma anonima o aggregata.
+
+**Durata**: [DURATA_COOKIE_ANALYTICS]
+
+**Finalità**:
+- Analisi traffico e comportamento utenti
+- Statistiche sulle pagine più visitate
+- Miglioramento esperienza utente
+- Ottimizzazione performance
+
+**Cookie utilizzati**:
+| Nome Cookie | Fornitore | Finalità | Durata |
+|-------------|-----------|----------|---------|
+| _ga | Google Analytics | Distingue gli utenti | 2 anni |
+| _ga_[ID] | Google Analytics | Mantiene lo stato della sessione | 2 anni |
+| _gid | Google Analytics | Distingue gli utenti | 24 ore |
+| [ALTRI_COOKIE_ANALYTICS] | | | |
+
+**Privacy Policy Google Analytics**: https://policies.google.com/privacy  
+**Opt-out Google Analytics**: https://tools.google.com/dlpage/gaoptout
+
+#### Cookie di Profilazione e Marketing
+
+Questi Cookie tracciano la navigazione dell'utente per creare profili sui suoi gusti, abitudini, scelte, ecc. e inviare messaggi pubblicitari mirati.
+
+**Durata**: [DURATA_COOKIE_MARKETING]
+
+**Finalità**:
+- Marketing personalizzato
+- Retargeting pubblicitario
+- Misurazione campagne
+- Profilazione utente
+
+**Cookie utilizzati**:
+| Nome Cookie | Fornitore | Finalità | Durata |
+|-------------|-----------|----------|---------|
+| _fbp | Meta (Facebook) | Tracciamento conversioni e retargeting | 3 mesi |
+| fr | Meta (Facebook) | Pubblicità personalizzata | 3 mesi |
+| [ALTRI_COOKIE_MARKETING] | | | |
+
+**Privacy Policy Meta**: https://www.facebook.com/privacy/policy/  
+**Gestione preferenze Meta**: https://www.facebook.com/help/247395082112892
+
+#### Cookie di Terze Parti
+
+Alcuni Cookie sono installati da servizi di terze parti. Il Titolare non ha controllo diretto su questi Cookie.
+
+**Servizi terzi che utilizzano Cookie**:
+- [SERVIZIO_1]: [LINK_PRIVACY_POLICY_1]
+- [SERVIZIO_2]: [LINK_PRIVACY_POLICY_2]
+- [SERVIZIO_N]: [LINK_PRIVACY_POLICY_N]
+
+### Altri Strumenti di Tracciamento
+
+Oltre ai Cookie, questa Applicazione può utilizzare altri Strumenti di Tracciamento:
+
+**Web Beacons / Pixel Tag**:
+Piccole immagini trasparenti incorporate nelle pagine web o nelle email per tracciare:
+- Apertura email
+- Click su link
+- Visualizzazioni pagina
+
+**Local Storage**:
+Tecnologia che permette di memorizzare dati sul browser dell'utente:
+- Maggiore capacità rispetto ai Cookie
+- Non viene inviato automaticamente al server
+- Utilizzato per: [FINALITA_LOCAL_STORAGE]
+
+**Fingerprinting**:
+Tecnica che raccoglie informazioni sulla configurazione del dispositivo:
+- Tipo di browser e versione
+- Sistema operativo
+- Risoluzione schermo
+- Plugin installati
+
+**Stato utilizzo**: [UTILIZZIAMO / NON UTILIZZIAMO] fingerprinting
+
+### Base Giuridica per l'Utilizzo di Cookie
+
+**Cookie Tecnici**: Art. 122, comma 1, Codice Privacy (non richiedono consenso)
+
+**Cookie Analitici**: 
+- Se anonimizzati: Non richiedono consenso
+- Se non anonimizzati: Richiedono consenso (Art. 122 Codice Privacy)
+
+**Cookie di Profilazione**: Art. 6(1)(a) GDPR + Art. 122 Codice Privacy (richiedono consenso esplicito)
+
+### Come Gestire le Preferenze sui Cookie
+
+#### 1. Banner Cookie
+
+Al primo accesso al sito, viene mostrato un banner che permette di:
+- Accettare tutti i Cookie
+- Rifiutare i Cookie non necessari
+- Personalizzare le preferenze
+- Leggere la Cookie Policy completa
+
+**Gestisci preferenze**: [LINK_GESTIONE_COOKIE]
+
+#### 2. Impostazioni Browser
+
+Puoi gestire o cancellare i Cookie attraverso le impostazioni del tuo browser:
+
+**Google Chrome**:
+- Impostazioni > Privacy e sicurezza > Cookie e altri dati dei siti
+- https://support.google.com/chrome/answer/95647
+
+**Mozilla Firefox**:
+- Opzioni > Privacy e sicurezza > Cookie e dati dei siti web
+- https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie
+
+**Safari**:
+- Preferenze > Privacy > Cookie e dati di siti web
+- https://support.apple.com/it-it/guide/safari/sfri11471/mac
+
+**Microsoft Edge**:
+- Impostazioni > Cookie e autorizzazioni sito > Cookie e dati del sito
+- https://support.microsoft.com/it-it/microsoft-edge
+
+**Opera**:
+- Impostazioni > Privacy e sicurezza > Cookie
+- https://help.opera.com/en/latest/web-preferences/#cookies
+
+#### 3. Strumenti di Opt-Out Specifici
+
+**Google Analytics**: https://tools.google.com/dlpage/gaoptout  
+**Meta (Facebook)**: https://www.facebook.com/help/247395082112892  
+**[ALTRI_OPT_OUT]**: [LINK]
+
+#### 4. Network Advertising Initiative (NAI)
+
+Opt-out da pubblicità comportamentale di molti network pubblicitari:
+http://www.networkadvertising.org/choices/
+
+#### 5. Your Online Choices
+
+Opt-out da pubblicità comportamentale per provider europei:
+http://www.youronlinechoices.com/
+
+### Conseguenze della Disabilitazione dei Cookie
+
+**Cookie Tecnici disabilitati**:
+- Impossibilità di autenticarsi
+- Perdita preferenze
+- Funzionalità ridotte
+
+**Cookie Analitici disabilitati**:
+- Nessun impatto sull'utilizzo del sito
+- Contribuisci meno al miglioramento del servizio
+
+**Cookie di Marketing disabilitati**:
+- Nessun impatto sull'utilizzo del sito
+- Pubblicità meno pertinente
+
+### Aggiornamenti della Cookie Policy
+
+Questa Cookie Policy può essere aggiornata periodicamente. Ti invitiamo a consultarla regolarmente.
+
+**Ultimo aggiornamento**: [DATA_AGGIORNAMENTO_COOKIE]
+
+### Contatti
+
+Per domande sulla Cookie Policy:
+- **Email**: [EMAIL_COOKIE]
+- **DPO**: [EMAIL_DPO]
+
+### Autorità di Controllo
+
+Hai il diritto di proporre reclamo all'Autorità Garante per la Protezione dei Dati Personali:
+- Sito: www.garanteprivacy.it
+- Email: garante@gpdp.it`
+  },
+  {
+    id: 'eu_users_info',
+    title: 'Ulteriori Informazioni per Utenti nell\'Unione Europea',
+    category: 'rights',
+    required: false,
+    gdprArticles: ['Art. 6', 'Art. 13', 'Art. 14', 'Art. 15-22'],
+    description: 'Informazioni specifiche per cittadini UE in linguaggio semplice',
+    template: `## Ulteriori informazioni per gli utenti nell'Unione Europea
+
+Questa sezione fornisce informazioni aggiuntive specifiche per gli utenti che si trovano nell'Unione Europea, in conformità al Regolamento UE 2016/679 (GDPR).
+
+### Base Giuridica del Trattamento
+
+Il Titolare tratta Dati Personali relativi all'Utente quando sussiste **una delle seguenti condizioni**:
+
+#### 1. Consenso (Art. 6(1)(a) GDPR)
+
+**Quando si applica**:
+- Newsletter e comunicazioni marketing
+- Cookie non tecnici
+- Profilazione per pubblicità personalizzata
+- [ALTRI_TRATTAMENTI_CONSENSO]
+
+**Come viene raccolto**:
+- Spunta esplicita su form
+- Banner cookie con scelta attiva
+- Email di conferma opt-in (double opt-in)
+
+**Tuo diritto**: Puoi **revocare il consenso in qualsiasi momento** senza pregiudicare la liceità del trattamento prima della revoca.
+
+**Come revocare**: [EMAIL_REVOCA_CONSENSO] o link nelle email ricevute
+
+#### 2. Esecuzione Contrattuale (Art. 6(1)(b) GDPR)
+
+**Quando si applica**:
+- Creazione e gestione account
+- Erogazione servizi richiesti
+- Elaborazione ordini e pagamenti
+- Assistenza clienti
+- [ALTRI_TRATTAMENTI_CONTRATTO]
+
+**Caratteristiche**: Il trattamento è **necessario** per adempiere alle tue richieste. Senza questi dati non possiamo fornire il servizio.
+
+#### 3. Obbligo Legale (Art. 6(1)(c) GDPR)
+
+**Quando si applica**:
+- Adempimenti fiscali (fatturazione, dichiarazioni)
+- Conservazione documenti contabili (10 anni)
+- Antiriciclaggio (D.Lgs. 231/2007)
+- Comunicazioni obbligatorie alle autorità
+- [ALTRI_TRATTAMENTI_LEGGE]
+
+**Caratteristiche**: Il trattamento è **obbligatorio per legge**. Il Titolare non ha discrezionalità.
+
+#### 4. Interesse Legittimo (Art. 6(1)(f) GDPR)
+
+**Quando si applica**:
+- Sicurezza informatica e prevenzione frodi
+- Analisi statistiche per miglioramento servizi
+- Marketing diretto verso clienti esistenti
+- Difesa di diritti in sede giudiziaria
+- [ALTRI_TRATTAMENTI_INTERESSE]
+
+**Bilanciamento interessi**: Il Titolare ha valutato che il proprio interesse legittimo **non pregiudica** i tuoi diritti e libertà fondamentali.
+
+**Tuo diritto**: Puoi **opporti** a questo trattamento in qualsiasi momento per motivi legati alla tua situazione particolare.
+
+#### 5. Interesse Vitale (Art. 6(1)(d) GDPR)
+
+**Quando si applica**: Solo in casi eccezionali per proteggere la vita o l'incolumità fisica tua o di terzi.
+
+#### 6. Interesse Pubblico (Art. 6(1)(e) GDPR)
+
+**Quando si applica**: Solo se il Titolare svolge compiti di interesse pubblico o esercita pubblici poteri.
+
+**Il nostro caso**: [APPLICABILE / NON APPLICABILE]
+
+---
+
+### Ulteriori Informazioni sul Tempo di Conservazione
+
+In conformità all'**Art. 5(1)(e) GDPR** (principio di limitazione della conservazione), i Dati Personali sono conservati **solo per il tempo necessario** alle finalità per cui sono stati raccolti.
+
+#### Criteri di Conservazione
+
+**Dati account attivo**:
+- **Durata**: Fino a richiesta di cancellazione o chiusura account
+- **Base**: Esecuzione contrattuale
+- **Dopo cancellazione**: [PERIODO_CONSERVAZIONE_POST_CANCELLAZIONE] per obblighi legali
+
+**Dati contrattuali e di fatturazione**:
+- **Durata**: 10 anni dalla fine del rapporto contrattuale
+- **Base**: Obbligo legale (Art. 2220 c.c., D.P.R. 600/1973)
+- **Conservazione**: Obbligatoria per legge
+
+**Dati di marketing (con consenso)**:
+- **Durata**: Fino a revoca del consenso o [PERIODO_INATTIVITA] di inattività
+- **Base**: Consenso
+- **Revoca**: Effetto immediato per futuri trattamenti
+
+**Cookie e dati di navigazione**:
+- **Cookie tecnici**: Sessione o [DURATA_COOKIE_TECNICI]
+- **Cookie analytics**: [DURATA_COOKIE_ANALYTICS] (es. 26 mesi)
+- **Cookie marketing**: [DURATA_COOKIE_MARKETING] (es. 13 mesi)
+
+**Dati di log e sicurezza**:
+- **Durata**: [DURATA_LOG] (es. 12 mesi)
+- **Base**: Interesse legittimo (sicurezza)
+
+**Backup**:
+- **Durata**: I dati possono persistere in backup per ulteriori [DURATA_BACKUP] prima della cancellazione definitiva
+
+#### Cancellazione Automatizzata
+
+Il Titolare implementa procedure di **cancellazione automatizzata** quando scadono i termini di conservazione, salvo obblighi legali di conservazione più lunghi.
+
+---
+
+### Diritti degli Interessati (Spiegazione Dettagliata)
+
+In conformità agli **Articoli 15-22 GDPR**, hai i seguenti diritti:
+
+#### 1. Diritto di Accesso (Art. 15)
+
+**Cosa puoi ottenere**:
+- ✓ Conferma se i tuoi dati sono trattati
+- ✓ Copia dei dati trattati
+- ✓ Informazioni su: finalità, categorie dati, destinatari, periodo conservazione
+- ✓ Informazioni su logica e conseguenze di eventuali decisioni automatizzate
+- ✓ Garanzie per trasferimenti extra-UE
+
+**Come esercitarlo**: Email a [EMAIL_DIRITTI] con oggetto "Richiesta Accesso Dati GDPR"
+
+**Tempi**: Risposta entro **1 mese** (estendibile a 3 in casi complessi)
+
+**Costo**: **Gratuito** per la prima richiesta. Costi amministrativi ragionevoli per copie aggiuntive o richieste manifestamente infondate/eccessive.
+
+#### 2. Diritto di Rettifica (Art. 16)
+
+**Cosa puoi fare**:
+- ✓ Correggere dati inesatti
+- ✓ Completare dati incompleti
+- ✓ Aggiornare informazioni obsolete
+
+**Come esercitarlo**: 
+- Online: Modifica diretta nel tuo account (se disponibile)
+- Email: [EMAIL_DIRITTI] specificando le correzioni richieste
+
+**Tempi**: Entro **1 mese** dalla richiesta
+
+#### 3. Diritto alla Cancellazione / "Diritto all'Oblio" (Art. 17)
+
+**Quando si applica**:
+- ✓ I dati non sono più necessari
+- ✓ Revochi il consenso (se base giuridica è consenso)
+- ✓ Ti opponi al trattamento e non prevalgono motivi legittimi
+- ✓ I dati sono stati trattati illecitamente
+- ✓ Obbligo legale di cancellazione
+
+**Quando NON si applica**:
+- ✗ Esercizio diritto alla libertà di espressione
+- ✗ Obbligo legale di conservazione (es. dati fiscali per 10 anni)
+- ✗ Accertamento, esercizio o difesa di un diritto in sede giudiziaria
+
+**Come esercitarlo**: Email a [EMAIL_DIRITTI] con oggetto "Richiesta Cancellazione Dati - Diritto all'Oblio"
+
+**Tempi**: Entro **1 mese** dalla richiesta
+
+**Effetti**: Cancellazione dei dati e comunicazione ai destinatari (se possibile e non sproporzionato)
+
+#### 4. Diritto alla Limitazione del Trattamento (Art. 18)
+
+**Cosa comporta**: I dati vengono conservati ma **non più utilizzati** (tranne che per conservazione, consenso, difesa diritti).
+
+**Quando si applica**:
+- ✓ Contesti l'esattezza dei dati (limitazione per periodo di verifica)
+- ✓ Il trattamento è illecito ma preferisci limitazione a cancellazione
+- ✓ I dati non servono più al Titolare ma ti servono per difesa diritti
+- ✓ Hai presentato opposizione (limitazione in attesa di verifica)
+
+**Come esercitarlo**: Email a [EMAIL_DIRITTI]
+
+**Tempi**: Entro **1 mese**
+
+#### 5. Diritto alla Portabilità dei Dati (Art. 20)
+
+**Cosa puoi ottenere**:
+- ✓ Ricevere i tuoi dati in **formato strutturato, di uso comune e leggibile da dispositivo automatico** (es. CSV, JSON)
+- ✓ Trasmettere i dati a un altro titolare (se tecnicamente fattibile)
+
+**Quando si applica**:
+- ✓ Base giuridica: Consenso o Contratto
+- ✓ Trattamento: Automatizzato
+
+**Formati disponibili**: [FORMATI_EXPORT] (es. JSON, CSV, XML)
+
+**Come esercitarlo**: Email a [EMAIL_DIRITTI] specificando formato preferito
+
+**Tempi**: Entro **1 mese**
+
+#### 6. Diritto di Opposizione (Art. 21)
+
+**Opposizione Generale (Art. 21(1))**:
+
+Puoi opporti al trattamento basato su:
+- Interesse legittimo (Art. 6(1)(f))
+- Interesse pubblico (Art. 6(1)(e))
+
+**Motivi**: Devi indicare motivi connessi alla tua situazione particolare.
+
+**Effetti**: Il Titolare cessa il trattamento **salvo** dimostri motivi legittimi cogenti o difesa diritti giudiziari.
+
+**Opposizione al Marketing Diretto (Art. 21(2-3))**:
+
+Puoi opporti in **qualsiasi momento** al trattamento per marketing diretto:
+- ✓ Senza indicare motivi
+- ✓ Gratuitamente
+- ✓ Facilmente (link nelle email, account settings)
+
+**Effetti**: Il Titolare **cessa immediatamente** il trattamento per marketing.
+
+**Come esercitarlo**:
+- Link "Unsubscribe" nelle email marketing
+- Impostazioni account
+- Email: [EMAIL_OPPOSIZIONE]
+
+#### 7. Diritto a Non Essere Sottoposto a Decisioni Automatizzate (Art. 22)
+
+**Cosa protegge**: Diritto a non essere soggetto a decisioni basate **unicamente** su trattamento automatizzato (inclusa profilazione) che producano **effetti giuridici** o ti incidano **significativamente**.
+
+**Quando si applica**: [APPLICABILE / NON APPLICABILE]
+
+Se applicabile:
+- **Garanzie**: Intervento umano, possibilità di esprimere opinione, contestare decisione
+- **Eccezioni**: Necessaria per contratto, autorizzata da legge, basata su consenso esplicito
+
+**Il nostro caso**: [DESCRIZIONE_DECISIONI_AUTOMATIZZATE]
+
+---
+
+### Dettagli sul Diritto di Opposizione
+
+**Quando i Dati Personali sono trattati per**:
+- Interesse pubblico
+- Esercizio di pubblici poteri
+- Interesse legittimo del Titolare
+
+**Gli Utenti hanno diritto** ad opporsi al trattamento per **motivi connessi alla loro situazione particolare**.
+
+**Marketing Diretto**: Gli Utenti possono opporsi **in qualsiasi momento** al trattamento per marketing diretto:
+- ✓ Gratuitamente
+- ✓ Senza fornire motivazione
+- ✓ Con effetto immediato
+
+**Profilazione per Marketing**: L'opposizione si estende alla profilazione correlata al marketing diretto.
+
+---
+
+### Come Esercitare i Diritti
+
+#### Modalità di Richiesta
+
+**1. Email**:
+- Indirizzo: [EMAIL_DIRITTI]
+- Oggetto: "Esercizio Diritti GDPR - [TIPO_DIRITTO]"
+- Allegare: Documento identità (per verifica)
+
+**2. Modulo Online**:
+- Link: [LINK_MODULO_DIRITTI]
+- Compilare campi obbligatori
+- Upload documento identità
+
+**3. Posta Raccomandata**:
+- Indirizzo: [INDIRIZZO_POSTALE]
+- Allegare: Copia documento identità
+
+#### Verifica Identità
+
+Per garantire la sicurezza dei tuoi dati, potremmo richiederti:
+- Documento d'identità valido
+- Ulteriori informazioni di verifica
+
+#### Tempi di Risposta
+
+**Standard**: Entro **1 mese** dalla richiesta
+
+**Casi complessi**: Fino a **3 mesi** (con comunicazione dei motivi entro 1 mese)
+
+**Urgenza**: Richieste manifestamente urgenti trattate con priorità
+
+#### Costi
+
+**Gratuito** salvo:
+- Richieste manifestamente infondate o eccessive
+- Copie aggiuntive oltre la prima (costo amministrativo ragionevole)
+
+#### Risposta del Titolare
+
+La risposta include:
+- ✓ Azioni intraprese
+- ✓ Tempistiche (se non immediato)
+- ✓ Motivazioni (se rifiuto parziale/totale)
+- ✓ Informazioni su reclamo al Garante
+- ✓ Informazioni su ricorso giudiziale
+
+---
+
+### Diritto di Proporre Reclamo
+
+Se ritieni che il trattamento dei tuoi dati violi il GDPR, hai il **diritto di proporre reclamo** a:
+
+**Autorità Garante per la Protezione dei Dati Personali**
+- **Indirizzo**: Piazza Venezia n. 11, 00187 Roma
+- **Telefono**: (+39) 06.69677.1
+- **Fax**: (+39) 06.69677.3785
+- **Email**: garante@gpdp.it
+- **PEC**: protocollo@pec.gpdp.it
+- **Sito web**: www.garanteprivacy.it
+- **Form online reclami**: https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524
+
+**Quando presentare reclamo**:
+- Ritieni che i tuoi diritti siano stati violati
+- Il Titolare non ha risposto alla tua richiesta entro i termini
+- La risposta del Titolare non è soddisfacente
+
+**Ricorso giudiziario**: Hai inoltre il diritto di agire in sede giudiziale.
+
+---
+
+### Trasferimenti di Dati Personali verso Paesi Terzi
+
+In conformità agli **Articoli 44-49 GDPR**, quando i tuoi dati vengono trasferiti al di fuori dell'UE/SEE:
+
+**Garanzie Adeguate Implementate**:
+- ✓ **Standard Contractual Clauses (SCC)**: Clausole contrattuali approvate dalla Commissione UE
+- ✓ **Transfer Impact Assessment (TIA)**: Valutazione dei rischi del trasferimento
+- ✓ **Misure Supplementari**: Crittografia, pseudonimizzazione, controlli accesso
+- ✓ **Certificazioni**: [SE_APPLICABILE] Privacy Shield (ora invalido), certificazioni ISO
+
+**Paesi con Decisione di Adeguatezza**:
+I trasferimenti verso paesi con decisione di adeguatezza UE non richiedono garanzie aggiuntive:
+- [LISTA_PAESI_ADEGUATI] (es. UK post-Brexit, Svizzera, Giappone, ecc.)
+
+**Trasferimenti Extra-UE nel nostro caso**:
+- [SERVIZIO_1]: [PAESE] - Garanzie: [SCC/ALTRO]
+- [SERVIZIO_2]: [PAESE] - Garanzie: [SCC/ALTRO]
+
+**Tuo diritto**: Puoi richiedere informazioni dettagliate sulle garanzie implementate e ottenere copia delle SCC.
+
+---
+
+### Modifiche a questa Informativa
+
+Eventuali modifiche a questa informativa privacy:
+
+**Notifica**:
+- Pubblicazione su questa pagina
+- [SE_POSSIBILE] Notifica via email agli utenti registrati
+- Aggiornamento data "Ultima modifica"
+
+**Consenso**:
+Qualora le modifiche interessino trattamenti basati sul consenso, il Titolare raccoglierà nuovamente il consenso se necessario.
+
+**Monitoraggio**:
+Ti invitiamo a consultare regolarmente questa pagina, verificando la data di ultima modifica.`
+  },
+  {
+    id: 'help_section',
+    title: 'Come Possiamo Aiutare',
+    category: 'rights',
+    required: false,
+    gdprArticles: ['Art. 12', 'Art. 15-22'],
+    description: 'Sezione pratica per facilitare l\'esercizio dei diritti',
+    template: `## Come possiamo aiutare?
+
+### Cosa puoi fare
+
+#### I tuoi dati
+
+Hai pieno controllo sui tuoi dati personali. Ecco le azioni che puoi intraprendere:
+
+**📥 Accedere ai tuoi dati**
+
+Vuoi sapere quali dati abbiamo su di te? Puoi chiedere:
+- Una copia di tutti i tuoi dati personali
+- Informazioni su come li utilizziamo
+- Con chi li condividiamo
+
+[**Richiedi accesso ai dati →**](mailto:[EMAIL_DIRITTI]?subject=Richiesta%20Accesso%20Dati%20GDPR&body=Mi%20chiamo%20%5BNome%5D%20%5BCognome%5D%20e%20vorrei%20accedere%20a%20tutti%20i%20dati%20personali%20che%20mi%20riguardano%20in%20possesso%20della%20vostra%20organizzazione.%0A%0AEmail%20account:%20%5Btua-email%40esempio.com%5D%0A%0AGrazie%20per%20l%27attenzione.%0ACordiali%20saluti,%0A%5BIl%20tuo%20nome%5D)
+
+---
+
+**✏️ Correggere i tuoi dati**
+
+Hai notato informazioni errate o obsolete? Puoi chiedere di:
+- Correggere dati inesatti
+- Aggiornare informazioni non aggiornate
+- Completare dati incompleti
+
+[**Richiedi correzione dati →**](mailto:[EMAIL_DIRITTI]?subject=Richiesta%20Rettifica%20Dati%20GDPR&body=Mi%20chiamo%20%5BNome%5D%20%5BCognome%5D%20e%20ho%20individuato%20alcune%20inesattezze%20nei%20miei%20dati%20personali:%0A%0A-%20%5BDescrivi%20l%27inesattezza,%20es.%20%22indirizzo%20email%20non%20aggiornato%22%5D%0A%0AVorrei%20che%20fossero%20rettificati.%0A%0AEmail%20account:%20%5Btua-email%40esempio.com%5D%0A%0AGrazie,%0A%5BIl%20tuo%20nome%5D)
+
+---
+
+**🗑️ Cancellare i tuoi dati (Diritto all'Oblio)**
+
+Non vuoi più che conserviamo i tuoi dati? Puoi chiedere:
+- Cancellazione completa del tuo account
+- Eliminazione di dati specifici
+- Rimozione da liste marketing
+
+[**Richiedi cancellazione dati →**](mailto:[EMAIL_DIRITTI]?subject=Richiesta%20Cancellazione%20Dati%20-%20Diritto%20all%27Oblio&body=Mi%20chiamo%20%5BNome%5D%20%5BCognome%5D%20e%20vorrei%20richiedere%20la%20cancellazione%20di%20tutti%20i%20dati%20personali%20che%20mi%20riguardano.%0A%0AEmail%20account:%20%5Btua-email%40esempio.com%5D%0A%0AMotivazione%20(opzionale):%20%5Bmotivo%5D%0A%0AGrazie,%0A%5BIl%20tuo%20nome%5D)
+
+---
+
+**📦 Trasferire i tuoi dati**
+
+Vuoi portare i tuoi dati altrove? Puoi richiedere:
+- Una copia in formato leggibile da computer (JSON, CSV)
+- Trasferimento diretto a un altro servizio (se possibile)
+
+[**Richiedi portabilità dati →**](mailto:[EMAIL_DIRITTI]?subject=Richiesta%20Portabilit%C3%A0%20Dati%20GDPR&body=Mi%20chiamo%20%5BNome%5D%20%5BCognome%5D%20e%20vorrei%20ricevere%20una%20copia%20di%20tutti%20i%20miei%20dati%20personali%20in%20formato%20strutturato%20e%20leggibile%20da%20dispositivo%20automatico.%0A%0AEmail%20account:%20%5Btua-email%40esempio.com%5D%0AFormato%20preferito:%20%5BCSV%20/%20JSON%20/%20altro%5D%0A%0AGrazie,%0A%5BIl%20tuo%20nome%5D)
+
+---
+
+**🚫 Opporti al trattamento**
+
+Non sei d'accordo con come utilizziamo i tuoi dati? Puoi:
+- Opporti al trattamento per motivi legittimi
+- Disattivare marketing e profilazione
+- Richiedere limitazione del trattamento
+
+[**Esprimi opposizione →**](mailto:[EMAIL_DIRITTI]?subject=Opposizione%20al%20Trattamento%20Dati&body=Mi%20chiamo%20%5BNome%5D%20%5BCognome%5D%20e%20intendo%20oppormi%20al%20trattamento%20dei%20miei%20dati%20per%20le%20seguenti%20finalit%C3%A0:%0A%0A-%20%5Bspecifica%20finalit%C3%A0,%20es.%20%22marketing%20diretto%22%5D%0A%0AMotivazione:%20%5Binserisci%20motivazione%5D%0A%0AEmail%20account:%20%5Btua-email%40esempio.com%5D%0A%0AGrazie,%0A%5BIl%20tuo%20nome%5D)
+
+---
+
+**🍪 Gestire le preferenze cookie**
+
+Vuoi controllare i cookie sul tuo dispositivo?
+
+[**Gestisci preferenze cookie →**](#) *(Apre il banner di gestione cookie)*
+
+---
+
+### Tempi di risposta
+
+Ti risponderemo entro **30 giorni** dalla tua richiesta. In casi complessi, potremmo impiegare fino a 3 mesi, ma ti informeremo entro il primo mese.
+
+### Verifica identità
+
+Per proteggere i tuoi dati, potremmo chiederti di verificare la tua identità allegando:
+- Copia documento d'identità
+- Conferma indirizzo email
+
+---
+
+## In caso di problemi
+
+Benché ci impegniamo a creare un'esperienza utente positiva e a proteggere i tuoi dati, sappiamo che occasionalmente possono verificarsi problemi.
+
+### Quando contattarci
+
+Contattaci se:
+- ❓ Hai domande sulla nostra privacy policy
+- 🐛 Hai riscontrato un problema tecnico
+- ⚠️ Sospetti un uso improprio dei tuoi dati
+- 💬 Hai suggerimenti per migliorare
+- 📧 Non hai ricevuto risposta alla tua richiesta
+
+### Come contattarci
+
+**Email generale**: [EMAIL_TITOLARE]  
+**Email privacy**: [EMAIL_DIRITTI]  
+**DPO (Responsabile Protezione Dati)**: [EMAIL_DPO]  
+**Telefono**: [TELEFONO]  
+**PEC**: [PEC_TITOLARE]
+
+**Orari assistenza**: [ORARI_ASSISTENZA]
+
+---
+
+### Non sei soddisfatto?
+
+Se ritieni che la nostra risposta non sia soddisfacente o che abbiamo violato i tuoi diritti:
+
+**🏛️ Proponi reclamo all'Autorità Garante**
+
+**Garante per la Protezione dei Dati Personali**
+- Piazza Venezia n. 11, 00187 Roma
+- Email: garante@gpdp.it
+- PEC: protocollo@pec.gpdp.it
+- Tel: (+39) 06.69677.1
+- Form reclami: [www.garanteprivacy.it](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524)
+
+**⚖️ Agire in sede giudiziale**
+
+Hai il diritto di agire in sede giudiziaria se ritieni che i tuoi diritti siano stati violati.
+
+---
+
+### Risorse Utili
+
+**📚 Guide del Garante**:
+- [Guida ai diritti degli interessati](https://www.garanteprivacy.it)
+- [Come proporre reclamo](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/4535524)
+
+**🇪🇺 Risorse UE**:
+- [Sito EDPB (European Data Protection Board)](https://edpb.europa.eu)
+- [Your Europe - Protezione Dati](https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection/index_it.htm)
+
+---
+
+### Moduli Pre-compilati
+
+Per facilitarti, ecco alcuni moduli email pre-compilati:
+
+| Richiesta | Link Mailto |
+|-----------|-------------|
+| Accesso dati | [Richiedi accesso →](mailto:[EMAIL_DIRITTI]?subject=Accesso%20Dati) |
+| Rettifica | [Richiedi rettifica →](mailto:[EMAIL_DIRITTI]?subject=Rettifica%20Dati) |
+| Cancellazione | [Richiedi cancellazione →](mailto:[EMAIL_DIRITTI]?subject=Cancellazione%20Dati) |
+| Portabilità | [Richiedi portabilità →](mailto:[EMAIL_DIRITTI]?subject=Portabilit%C3%A0%20Dati) |
+| Opposizione | [Esprimi opposizione →](mailto:[EMAIL_DIRITTI]?subject=Opposizione) |
+| Domanda generica | [Contattaci →](mailto:[EMAIL_DIRITTI]?subject=Domanda%20Privacy) |
+
+---
+
+**💡 Suggerimento**: Salva questa pagina tra i preferiti per accedere rapidamente alle informazioni sulla privacy!`
   }
 ]
 

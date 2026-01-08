@@ -2,15 +2,31 @@
 
 Un generatore di privacy policy GDPR-compliant con interfaccia drag & drop costruito con Next.js 14 e shadcn/ui.
 
+## 🎉 Novità v2.0 - Layout iubenda-like!
+
+**Nuove funzionalità user-friendly**:
+- 📋 **Sezione Riepilogo** con cards visive colorate
+- 📑 **Table of Contents** navigabile con sidebar sticky
+- 🔌 **Dettagli Servizi Terzi** con accordion espandibili
+- 🍪 **Cookie Policy** completa con tabelle dettagliate
+- 🇪🇺 **Info Utenti UE** in linguaggio semplice
+- 🤝 **"Come Possiamo Aiutare"** con link mailto pre-compilati
+- 🎨 **Export HTML Professionale** simile a iubenda
+
+👉 **[Vedi Preview delle Nuove Funzionalità](PREVIEW.html)**  
+📖 **[Leggi la Documentazione Completa](NUOVE_FUNZIONALITA.md)**
+
 ## Caratteristiche
 
-- 🎯 **GDPR Compliant**: Tutte le sezioni obbligatorie previste dal Regolamento Europeo
+- 🎯 **GDPR Compliant**: Tutte le sezioni obbligatorie previste dal Regolamento Europeo 2016/679
 - 🎨 **Drag & Drop**: Interfaccia intuitiva per comporre la privacy policy
 - 📝 **Editor Integrato**: Modifica in tempo reale con anteprima markdown
 - 💾 **Persistenza Locale**: Salva automaticamente il lavoro nel browser
-- 📤 **Export Multiplo**: Scarica in Markdown o copia negli appunti
-- 🏢 **Multi-Business**: Template ottimizzati per siti web, SaaS ed e-commerce
-- 🌐 **Responsive**: Funziona su desktop, tablet e mobile
+- 📤 **Export Multiplo**: Markdown, HTML semplice, HTML styled (iubenda-like), PDF
+- 🏢 **Template Completi**: 15+ sezioni pre-configurate con riferimenti articoli GDPR
+- 🌐 **Responsive**: Layout ottimizzato per desktop, tablet e mobile
+- ♿ **Accessibile**: Conforme WCAG 2.1 AA
+- 🎨 **Design Moderno**: UI pulita ispirata a iubenda con shadcn/ui
 
 ## Installazione
 
@@ -62,30 +78,119 @@ src/
 
 ## Sezioni GDPR Incluse
 
-### Obbligatorie
-- ✅ Identità del Titolare del Trattamento
-- ✅ Base Giuridica del Trattamento
-- ✅ Finalità del Trattamento  
-- ✅ Categorie di Dati Personali
-- ✅ Diritti degli Interessati
+## 📋 Sezioni Disponibili
+
+### Obbligatorie (Art. 13-14 GDPR)
+- ✅ Identità del Titolare del Trattamento (Art. 13(1)(a))
+- ✅ Base Giuridica del Trattamento (Art. 6)
+- ✅ Finalità del Trattamento (Art. 5(1)(b))
+- ✅ Categorie di Dati Personali (Art. 4(1))
+- ✅ Diritti degli Interessati (Art. 15-22)
+
+### Nuove Sezioni User-Friendly 🎉
+- 📋 **Riepilogo** - Panoramica con cards visive
+- 🔌 **Dettagli Servizi Terzi** - Accordion con provider esterni
+- 🍪 **Cookie Policy** - Gestione completa cookie
+- 🇪🇺 **Info Utenti UE** - Spiegazioni semplificate GDPR
+- 🤝 **Come Possiamo Aiutare** - Link mailto per esercizio diritti
 
 ### Opzionali
-- Cookie e Tecnologie di Tracciamento
-- Trasferimenti Internazionali
-- Misure di Sicurezza
-- Conservazione dei Dati
-- Responsabile Protezione Dati (DPO)
-- Modifiche alla Privacy Policy
+- Periodo di Conservazione (Art. 5(1)(e))
+- Destinatari dei Dati (Art. 13(1)(e))
+- Trasferimenti Internazionali (Art. 44-49)
+- Misure di Sicurezza (Art. 32)
+- Responsabile Protezione Dati - DPO (Art. 37-39)
+- Profilazione e Decisioni Automatizzate (Art. 22)
+- Accountability (Art. 5(2), Art. 24)
+- Modifiche alla Privacy Policy (Art. 13(2)(b))
 
-## Personalizzazione
+## 🚀 Come Usare
+
+### 1. Builder - Componi la Policy
+
+1. **Aggiungi Sezioni**: Trascina le sezioni dalla sidebar sinistra all'editor
+2. **Ordina**: Riorganizza l'ordine con drag & drop
+3. **Personalizza**: Clicca su ogni sezione per modificarne il contenuto
+4. **Variabili**: Vai al tab "Variabili" e compila i dati aziendali
+
+### 2. Compila le Variabili
+
+Nel tab **Variabili** compila:
+- **Ragione Sociale**: Nome della tua azienda
+- **Indirizzo Completo**: Sede legale
+- **Email Titolare**: Email contatto principale
+- **Email Privacy**: Email per esercizio diritti GDPR
+- **DPO** (opzionale): Responsabile Protezione Dati
+
+### 3. Pubblica
+
+Clicca su **"Pubblica HTML"** per scaricare la privacy policy in formato HTML professionale, pronta per essere caricata sul tuo sito.
+
+**Formati disponibili**:
+- **HTML Styled** (🌟 Consigliato) - Layout iubenda-like
+- **HTML Semplice** - Base per customizzazioni
+- **Markdown** - Per documentazione
+- **PDF** - Via stampa browser
+
+## 🎨 Personalizzazione
+
+## 🎨 Personalizzazione
+
+### Variabili Supportate
 
 Il sistema supporta placeholder automatici che vengono sostituiti con i dati aziendali:
 
+**Variabili Base**:
 - `[RAGIONE_SOCIALE]` → Nome azienda
-- `[INDIRIZZO_COMPLETO]` → Indirizzo completo
-- `[EMAIL_TITOLARE]` → Email di contatto
+- `[INDIRIZZO_COMPLETO]` → Indirizzo completo sede legale
+- `[PARTITA_IVA]` → Partita IVA / Codice Fiscale
+- `[EMAIL_TITOLARE]` → Email di contatto principale
+- `[EMAIL_DIRITTI]` → Email per esercizio diritti GDPR
+- `[EMAIL_DPO]` → Email Data Protection Officer
 - `[TELEFONO]` → Numero di telefono
 - `[SITO_WEB]` → URL del sito web
+- `[PEC_TITOLARE]` → PEC aziendale
+
+**Variabili Custom**:
+Puoi aggiungere variabili personalizzate direttamente nell'editor per contenuti specifici.
+
+### Personalizzare l'HTML Generato
+
+Nell'HTML styled puoi modificare:
+
+**Colori** (CSS variables in `:root`):
+```css
+--color-primary: #2E3D52;      /* Titoli */
+--color-secondary: #4A90E2;    /* Link e accent */
+--color-card-1: #E8F4FD;       /* Card 1 background */
+--color-card-2: #FFF4E6;       /* Card 2 background */
+```
+
+**Logo Azienda**: Sostituisci il testo nel header con:
+```html
+<img src="your-logo.png" alt="Company" />
+```
+
+**Loghi Provider**: Aggiungi loghi reali dei servizi terzi nella cartella `/assets/logos/`
+
+## 📖 Documentazione
+
+- **[Nuove Funzionalità v2.0](NUOVE_FUNZIONALITA.md)** - Guida completa alle nuove sezioni
+- **[Preview HTML](PREVIEW.html)** - Anteprima del layout generato
+- **[Analisi Gap](CONTENT_GAP_ANALYSIS.md)** - Confronto con iubenda
+
+## 🧪 Testing
+
+```bash
+# Unit tests
+npm run test
+
+# E2E tests
+npm run test:e2e
+
+# Accessibility audit
+npm run audit:a11y
+```
 
 ## Deployment
 

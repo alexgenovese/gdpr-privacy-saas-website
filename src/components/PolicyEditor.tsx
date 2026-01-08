@@ -18,7 +18,7 @@ import EditableSection from './EditableSection'
 import PolicyPreview from './PolicyPreview'
 import VariablesEditor from './VariablesEditor'
 import { useBuilderStore } from '@/store/builder'
-import { validateMandatorySections, downloadMarkdown, downloadPDF, downloadHTML, copyToClipboard } from '@/lib/export-utils'
+import { validateMandatorySections, downloadMarkdown, downloadPDF, downloadHTML, downloadHTMLStyled, copyToClipboard } from '@/lib/export-utils'
 import { AlertTriangle, Download, Copy, RotateCcw, FileText, FileCode, Globe, ChevronDown } from 'lucide-react'
 import { toast } from '@/components/ui/use-toast'
 import { cn } from '@/lib/utils'
@@ -60,7 +60,7 @@ const PolicyEditor = ({ isDraggingFromSidebar = false }: PolicyEditorProps) => {
     id: 'policy-editor',
   })
 
-  const handleExport = async (format: 'download' | 'copy' | 'pdf' | 'html') => {
+  const handleExport = async (format: 'download' | 'copy' | 'pdf' | 'html' | 'html-styled') => {
     if (!canExport) {
       toast({
         title: "Impossibile esportare",
@@ -89,6 +89,16 @@ const PolicyEditor = ({ isDraggingFromSidebar = false }: PolicyEditorProps) => {
       toast({
         title: "HTML scaricato",
         description: "La privacy policy è stata scaricata come file HTML."
+      })
+    } else if (format === 'html-styled') {
+      downloadHTMLStyled(
+        content, 
+        companyInfo.name || 'La tua azienda',
+        new Date().toLocaleDateString('it-IT', { year: 'numeric', month: 'long', day: 'numeric' })
+      )
+      toast({
+        title: "HTML Pubblicato",
+        description: "Privacy Policy scaricata in formato HTML professionale, pronta per la pubblicazione."
       })
     } else {
       const success = await copyToClipboard(content)
@@ -174,7 +184,7 @@ const PolicyEditor = ({ isDraggingFromSidebar = false }: PolicyEditorProps) => {
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => handleExport('html')}>
                   <FileCode className="h-4 w-4 mr-2" />
-                  HTML (.html)
+                  HTML semplice
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => handleExport('pdf')}>
                   <Download className="h-4 w-4 mr-2" />
@@ -183,14 +193,14 @@ const PolicyEditor = ({ isDraggingFromSidebar = false }: PolicyEditorProps) => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Bottone Pubblica */}
+            {/* Bottone Pubblica - ora scarica HTML styled */}
             <Button
-              onClick={handlePublish}
-              disabled={!canExport || !isModified}
+              onClick={() => handleExport('html-styled')}
+              disabled={!canExport}
               className="bg-green-600 hover:bg-green-700"
             >
               <Globe className="h-4 w-4 mr-2" />
-              Pubblica
+              Pubblica HTML
             </Button>
 
             {/* Reset */}
